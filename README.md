@@ -1,21 +1,16 @@
-## Vejr-app
+# React + Vite
 
-I denne opgave skal du lave en simpel hjemmeside, hvor man kan søge på en by og få temperaturen.  
-Du skal bruge **OpenWeatherMap (OWM) API** til at hente vejrdata fra deres servere.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-### Trin-for-trin:
+Currently, two official plugins are available:
 
-1. **[Opret en gratis konto](https://home.openweathermap.org/users/sign_up)** på OWM og få en **API-nøgle**.
-2. Lav et **inputfelt**, hvor brugeren kan indtaste navnet på en by.
-3. Lav en funktion, der sender en forespørgsel til **[OWM Geocoding API](https://openweathermap.org/api/geocoding-api)** Du vil modtage et svar med de geografiske koordinater (bredde- og længdegrad) for den valgte by.
-4. Lav en anden funktion, der sender en forespørgsel til **[OWM Current Weather API](https://openweathermap.org/current)** med:
-   - De geografiske koordinater
-   - Din API-nøgle  
-   Du vil modtage et svar med aktuelle vejrdata for den valgte by, herunder temperaturen.
-5. **Vis temperaturen** på hjemmesiden sammen med:
-   - Bynavn
-   - Eventuelt et passende ikon eller billede for vejret (se Weather Icons)
-6. **Test din hjemmeside** og sørg for, at den virker for forskellige byer og håndterer eventuelle fejl eller ugyldige input.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### Aflevering:
-- Push til GitHub og husk pull request til main
+## React Compiler
+
+The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
